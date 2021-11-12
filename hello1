@@ -1,0 +1,7 @@
+#!/bin/bash
+CURDATE="$(date)"
+
+cat <<EOF | tee hello.txt > /dev/null
+Hello world! It is now $CURDATE
+
+EOF
